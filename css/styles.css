@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+
+html{
+    font-size: 62.5%;
+}
+
+:root{
+    --orange: hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+    --light-grey: hsl(217, 12%, 63%);
+    --medium-grey: hsl(216, 12%, 54%);
+    --dark-blue: #1f2630;
+    --very-dark-blue: hsl(216, 12%, 8%);
+}
+
+.inactive{
+    display: none;
+  }
+
+body{
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Overpass', sans-serif;
+    background-color:var(--very-dark-blue);
+}
+
+.raiting-card{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 320px;
+    height: auto;
+    margin:0 auto;
+    padding: 20px;
+    background-color: var(--dark-blue);
+    border-radius: 16px;
+}
+
+.raiting-card--info{
+    margin-bottom: 20px;
+}
+
+.raiting-card .star-icon-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background-color: #262e38;
+    border-radius: 50%;
+}
+
+.star-icon-container .icon{
+    width: 10px;
+    height: 10px;
+    background-image: url("/images/icon-star.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.raiting-card h1{
+    margin-top: 20px;
+    margin-bottom:10px;
+    font-weight: 500;
+    color: var(--white);
+}
+
+.raiting-card p{
+    color: var(--medium-grey);
+    font-size: 1.2rem;
+    line-height: 17px;
+}
+
+.raiting-number .submit-button{
+    width: 100%;
+    height: 35px;
+    border-radius: 24px;
+    border: solid var(--orange);
+    margin: 20px 0 10px 0 ;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    color:var(--white);
+    background-color: var(--orange);
+    cursor: pointer;
+}
+
+.raiting-number .submit-button:hover{
+    background-color: var(--white);
+    color: var(--orange);
+    border: solid var(--white)
+}
+
+.numbers-containers{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.numbers-containers .number-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #262e38;
+    color: var(--light-grey);
+    border: solid #262e38;
+    cursor: pointer;
+}
+
+.numbers-containers .number-container:hover{
+    background-color: var(--orange);
+    color: var(--white);
+    border: solid var(--orange);
+
+}
+
+.number-selected{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: var(--orange);
+    color: var(--white);
+    border: solid var(--orange);
+    cursor: pointer;
+}
+
+.number-selected-other{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: var(--light-grey);
+    color: var(--white);
+    border: solid var(--light-grey);
+    cursor: pointer;
+}
+
+.number-container a{
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: var(--medium-grey);
+    cursor: pointer;
+}
+
+.align-center{
+    text-align: center;
+}
+
+.raiting-card .resume-raiting{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:20px auto;
+    width: 60%;
+    height: 30px;
+    border-radius: 24px;
+    background-color: #262e38;
+    color: var(--orange);
+}
